@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+    color: #000000; 
+    line-height: 1.6; 
+    scroll-behavior: smooth; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+header {
+    background: #7c574a;
+    padding: 25px 20px;
+    border-bottom: 3px solid #412e27;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8em;
+    color: #f7f1e9;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+    letter-spacing: 2px;
+    user-select: none;
+    cursor: default;
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    flex-wrap: nowrap;
+    margin: o;
+    padding: 0;
+    display: flex;
+    gap: 35px;
+}
+
+#main-nav ul li a {
+    color: #f7f1e9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li a:focus {
+    background-color: #412e27;
+    color: #f7f1e9;
+    box-shadow: 0 4px 15px rgba(65, 46, 39, 0.6);
+    outline: none;
+}
+
+.destaque {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;
+    height: 100vh;          
+    padding: 60px 20px;
+    background-color: #f0ebe3; 
+}
+.destaque h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2em;
+  color: #7c574a;
+  margin-bottom: 30px;
+}
+
+.destaque article {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.destaque h3 {
+  font-size: 1.8em;
+  color: #412e27;
+  margin-top: 20px;
+}
+
+.destaque p {
+  color: #333333;
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+.poster {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+}
+
+.poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.top-filmes, .estreias {
+  text-align: center; 
+  padding: 20px;
+  background-color: #fffaf5
+}
+
+
+.filme:hover, .lancamento:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.filme img, .lancamento img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.filme p, .lancamento h3, .lancamento p {
+  padding: 10px;
+  font-size: 0.95em;
+  color: #4e4036;
+  font-weight: 500;
+}
+
+.filme, .lancamento {
+  width: 160px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-filmes h2, .estreias h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2em;
+  color: #7c574a;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.top-posters, .lancamentos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+
+.top-posters a, .lancamentos-grid a {
+    text-decoration: none;
+}
+
+.top-posters img, .lancamentos-grid img {
+    width: 160px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.top-posters img:hover, .lancamentos-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.criticas {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.criticas h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2em;
+  color: #7c574a;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.critica {
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.critica:last-child {
+  border-bottom: none;
+}
+
+.critica h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6em;
+  color: #412e27;
+  margin-bottom: 6px;
+}
+
+.critica h5 {
+  font-weight: 600;
+  color: #6b584e;
+  margin-bottom: 15px;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.critica p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.critica a {
+  display: inline-block;
+  color: #b17e53;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.critica a:hover {
+  color: #7c574a;
+  border-color: #7c574a;
+}
+
+.curiosidades {
+    background-color: #f0ebe3;
+    padding: 40px 20px;
+    border-top: 2px solid #b1a185;
+    border-bottom: 2px solid #b1a185;
+    text-align: center;
+}
+
+.curiosidades h2 {
+    font-size: 2em;
+    color: #7c574a;
+    margin-bottom: 20px;
+}
+
+.curiosidades ul {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.curiosidades li {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.curiosidades li:hover {
+    transform: scale(1.02);
+}
+
+.curiosidades strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #412e27;
+}
+
+
+footer {
+    
+    background: #7c574a;
+    padding: 3px 3px;
+    color: #f7f1e9;
+    font-weight: 50;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    border-top: 3px solid #412e27;
+    font-size: 1em;
+    letter-spacing: 1px;
+    
+}
+
+footer a:hover {
+    color: #412e27; 
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #f7f1e9; 
+}
+
