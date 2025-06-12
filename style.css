@@ -11,6 +11,7 @@ body {
     scroll-behavior: smooth; 
 }
 
+<!-- centraliza o conteúdo -->
 .container {
     max-width: 1200px; 
     margin: 0 auto; 
@@ -39,6 +40,7 @@ header .logo {
     cursor: default;
 }
 
+<!-- menu horizontal -->
 #main-nav ul {
     list-style: none;
     margin: 0;
@@ -85,7 +87,7 @@ header .logo {
   color: #7c574a;
   margin-bottom: 30px;
 }
-
+<!-- caixa branca -->
 .destaque article {
   background-color: #ffffff;
   padding: 30px;
