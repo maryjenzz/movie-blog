@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 
-
+/* ========================== Configuração Geral do Body ========================== */
 body {
     font-family: 'Roboto', sans-serif; 
     margin: 0;
@@ -11,12 +11,14 @@ body {
     scroll-behavior: smooth; 
 }
 
-<!-- centraliza o conteúdo -->
+/* Centraliza o conteúdo principal */
 .container {
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 0 20px; 
 }
+
+/* ==================== Cabeçalho (Header) ==================== */
 header {
     background: #7c574a;
     padding: 25px 20px;
@@ -29,6 +31,7 @@ header {
     align-items: center;
 }
 
+/* Logo do site */
 header .logo {
     font-family: 'Oswald', sans-serif;
     font-size: 2.8em;
@@ -40,12 +43,11 @@ header .logo {
     cursor: default;
 }
 
-<!-- menu horizontal -->
+/* =========================== Navegação (Menu horizontal) =========================== */
 #main-nav ul {
     list-style: none;
     margin: 0;
     flex-wrap: nowrap;
-    margin: o;
     padding: 0;
     display: flex;
     gap: 35px;
@@ -71,6 +73,7 @@ header .logo {
     outline: none;
 }
 
+/* ============================ Seção de Destaque da Página ============================ */
 .destaque {
     display: flex;
     flex-direction: column;  
@@ -81,13 +84,16 @@ header .logo {
     padding: 60px 20px;
     background-color: #f0ebe3; 
 }
+
 .destaque h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 2.2em;
   color: #7c574a;
   margin-bottom: 30px;
 }
-<!-- caixa branca -->
+
+/* Caixa branca central de destaque */
+
 .destaque article {
   background-color: #ffffff;
   padding: 30px;
@@ -109,6 +115,8 @@ header .logo {
   font-size: 1em;
   line-height: 1.6;
 }
+
+/* ==================== Poster de filmes ==================== */
 .poster {
     width: 250px;
     height: auto;
@@ -123,36 +131,11 @@ header .logo {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
 }
 
+/* ============================ Seções de Filmes e Estreias ============================ */
 .top-filmes, .estreias {
   text-align: center; 
   padding: 20px;
   background-color: #fffaf5
-}
-
-
-.filme:hover, .lancamento:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.filme img, .lancamento img {
-  width: 100%;
-  border-radius: 12px 12px 0 0;
-}
-
-.filme p, .lancamento h3, .lancamento p {
-  padding: 10px;
-  font-size: 0.95em;
-  color: #4e4036;
-  font-weight: 500;
-}
-
-.filme, .lancamento {
-  width: 160px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .top-filmes h2, .estreias h2 {
@@ -163,6 +146,7 @@ header .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .top-posters, .lancamentos-grid {
     display: flex;
     justify-content: center;
@@ -189,6 +173,32 @@ header .logo {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+.filme, .lancamento {
+  width: 160px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filme:hover, .lancamento:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.filme img, .lancamento img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.filme p, .lancamento h3, .lancamento p {
+  padding: 10px;
+  font-size: 0.95em;
+  color: #4e4036;
+  font-weight: 500;
+}
+
+/* ======================== Seção de Críticas ======================== */
 .criticas {
   max-width: 900px;
   margin: 40px auto;
@@ -253,6 +263,7 @@ header .logo {
   border-color: #7c574a;
 }
 
+/* ============================ Seção de Curiosidades ============================ */
 .curiosidades {
     background-color: #f0ebe3;
     padding: 40px 20px;
@@ -295,9 +306,8 @@ header .logo {
     color: #412e27;
 }
 
-
+/* ===================== Rodapé (Footer) ===================== */
 footer {
-    
     background: #7c574a;
     padding: 3px 3px;
     color: #f7f1e9;
@@ -307,7 +317,6 @@ footer {
     border-top: 3px solid #412e27;
     font-size: 1em;
     letter-spacing: 1px;
-    
 }
 
 footer a:hover {
@@ -319,4 +328,3 @@ footer a:hover {
     font-size: 10px;
     color: #f7f1e9; 
 }
-
