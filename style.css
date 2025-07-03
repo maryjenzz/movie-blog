@@ -306,6 +306,265 @@ header .logo {
     color: #412e27;
 }
 
+/* ======================== Seção de Formulário (Cadastro) ======================== */
+.form-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2em;
+    color: #7c574a;
+    margin-bottom: 30px;
+}
+
+.cadastro-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cadastro-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #412e27;
+}
+
+.cadastro-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.btn-submit {
+    background-color: #7c574a;
+    color: #f7f1e9;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #412e27;
+}
+
+/* ======================== Estilos de Validação de Erro ======================== */
+.input-error {
+    border: 2px solid #d9534f;
+    box-shadow: 0 0 6px rgba(217, 83, 79, 0.5);
+}
+.error-message {
+    color: #d9534f;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+    height: 1em;
+}
+
+/* ======================== Seção de Serviços ======================== */
+.servicos-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicos-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    color: #7c574a;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Layout em grid para responsividade */
+.servicos-grid {
+    display: grid;
+    /* Cria colunas flexíveis que se ajustam ao tamanho da tela */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card individual de cada serviço */
+.servico-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Usando flexbox para alinhar o conteúdo interno verticalmente */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Garante que a borda arredondada seja aplicada na imagem */
+}
+
+/* Efeito de destaque ao passar o mouse */
+.servico-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem do serviço */
+.servico-item img {
+    width: 100%;
+    height: 180px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+/* Título do serviço */
+.servico-item h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    color: #412e27;
+    margin: 20px 20px 15px 20px;
+}
+
+/* Descrição do serviço */
+.servico-item p {
+    color: #333;
+    line-height: 1.6;
+    margin: 0 20px 20px 20px;
+    flex-grow: 1; /* Faz com que o parágrafo ocupe o espaço disponível, empurrando o botão para baixo */
+}
+
+/* Botão "Saiba Mais" */
+.btn-saiba-mais {
+    display: block;
+    background-color: #b17e53;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 20px 20px 20px; /* Margem para alinhar com o texto */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #7c574a;
+}
+
+/* ======================== Seção de FAQ (Interativo) ======================== */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2em;
+    color: #7c574a;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #fffaf5;
+    color: #412e27;
+    border: none;
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f0ebe3;
+}
+
+/* Ícone de '+' que vira '-' */
+.faq-question::after {
+    content: '+';
+    font-size: 1.8em;
+    color: #7c574a;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.faq-question.active::after {
+    content: '−';
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.faq-answer p {
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+/* ======================== Seção de Calculadora de Frete ======================== */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.resultado-frete {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f0ebe3;
+    border-radius: 8px;
+    border-left: 5px solid #7c574a;
+    display: none; /* Começa oculto */
+    text-align: left;
+    color: #412e27;
+}
+
+.resultado-frete p {
+    margin: 5px 0;
+}
+
+.resultado-frete .erro {
+    color: #d9534f;
+    font-weight: bold;
+}
+
 /* ===================== Rodapé (Footer) ===================== */
 footer {
     background: #7c574a;

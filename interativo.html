@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interativo - Zoom no Filme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Zoom no Filme</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="interativo.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Como funciona o cadastro no site?</button>
+                    <div class="faq-answer">
+                        <p>O cadastro é simples e gratuito! Basta acessar a página "Cadastro", preencher seus dados como nome, e-mail e senha, e pronto! Você terá acesso a todos os nossos serviços exclusivos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Os serviços oferecidos são pagos?</button>
+                    <div class="faq-answer">
+                        <p>A maioria dos nossos serviços, como recomendações, notificações e acesso ao fórum, é totalmente gratuita para usuários cadastrados. Eventualmente, poderemos oferecer conteúdos premium pagos, mas isso será claramente sinalizado.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Como funciona a calculadora de frete?</button>
+                    <div class="faq-answer">
+                        <p>Nossa calculadora simula o custo de entrega para pôsteres de filmes e outros produtos físicos que possamos oferecer. O valor é fictício e baseado no tipo de entrega (Normal ou Expressa) escolhido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Calculadora de Entrega de Pôster</h2>
+            <form class="frete-form" id="freteForm">
+                <div class="form-group">
+                    <label for="cep">Digite seu CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="ex: 89300000" required>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de Entrega</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="tipo-entrega" value="normal" checked> Normal (Até 10 dias úteis)</label>
+                        <label><input type="radio" name="tipo-entrega" value="expressa"> Expressa (Até 3 dias úteis)</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Calcular Frete</button>
+            </form>
+            <div id="resultadoFrete" class="resultado-frete"></div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p class="copyright">© 2025 Zoom no Filme</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
